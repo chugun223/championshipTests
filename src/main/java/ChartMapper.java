@@ -1,5 +1,6 @@
 import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
+
 import java.util.List;
 
 public class ChartMapper {

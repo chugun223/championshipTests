@@ -2,7 +2,7 @@ import java.io.IOException;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class Resolver implements IResolver{
+public class Resolver implements IResolver {
     private final List<Player> players;
 
     public Resolver(CSV_Parser parser) throws IOException {

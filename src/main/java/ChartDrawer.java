@@ -5,6 +5,7 @@ import org.jfree.chart.axis.NumberAxis;
 import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.chart.plot.XYPlot;
 import org.jfree.data.xy.XYDataset;
+
 import javax.swing.*;
 import java.text.DecimalFormat;
 
