@@ -337,6 +337,18 @@ public class UnitTest {
     }
 
     @Test
+    public void getPlayers_ReturnsCopy() throws IOException {
+        when(mockParser.parsePlayers())
+                .thenReturn(List.of(new Player("A", "T", Position.DEFENDER, "", "", 1, 1, 1)));
+
+        Resolver resolver = new Resolver(mockParser);
+        List<Player> players = resolver.getPlayers();
+
+        assertEquals(1, players.size());
+        assertThrows(UnsupportedOperationException.class, () -> players.add(null));
+    }
+
+    @Test
     public void getCountWithoutAgency_NullAgency() throws IOException {
         when(mockParser.parsePlayers())
                 .thenReturn(List.of(
